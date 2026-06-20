@@ -64,13 +64,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* --- Dashboard Grid Core --- */
-.dashboard-grid {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* 2/3 for Timer, 1/3 for Sidebar */
-    gap: 0;
-}
 
 /* Generic Panel Elements */
 .panel-label {
