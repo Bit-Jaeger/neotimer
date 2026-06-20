@@ -2,17 +2,17 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace; /* Monospace fits the geometric vibe perfectly */
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 :root {
-    --bg-main: #f4f6f8;         /* Crisp, clean off-white background */
-    --panel-bg: #ffffff;        /* Pure white for layered panels */
-    --border-metal: #bec5cb;    /* Medium metallic grey for structural borders */
-    --text-dark: #2d353c;       /* Deep slate grey for high-contrast typography */
-    --eva-blue: #2a6f97;        /* Crisp, technical blue accent */
-    --eva-blue-light: #e1f1fd;  /* Light blue tint for highlights/hover states */
+    --bg-main: #f4f6f8;        
+    --panel-bg: #ffffff;       
+    --border-metal: #bec5cb;   
+    --text-dark: #2d353c;      
+    --eva-blue: #2a6f97;       
+    --eva-blue-light: #e1f1fd;  
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 
 /* --- Layout Frame --- */
 .interface-container {
-    width: 100%;
+    width: 90%;
     max-width: 1200h;
     height: 90vh;
     display: flex;
@@ -78,11 +78,11 @@ body {
 
 /* --- Timer Workspace Area --- */
 .timer-section {
-    padding: 30px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     /*justify-content: center;*/
-    align-items: center;
+    /*align-items: center;*/
     border-right: 2px solid var(--border-metal);
     background-color: var(--panel-bg);
 }
@@ -92,7 +92,7 @@ body {
     font-weight: 700;
     letter-spacing: -2px;
     color: var(--text-dark);
-    margin: 20px 0;
+    margin: 10px 0;
     font-variant-numeric: tabular-nums; /* Prevents text shifting when numbers change */
 }
 
@@ -100,60 +100,6 @@ body {
     font-size: 0.8rem;
     color: var(--border-metal);
     letter-spacing: 4px;
-}
-
-/* --- To-Do Sidebar Section --- */
-.todo-section {
-    padding: 30px;
-    background-color: #fafbfc; /* Subtle layer depth shift */
-    display: flex;
-    flex-direction: column;
-}
-
-.todo-input-group {
-    display: flex;
-    margin-bottom: 25px;
-}
-
-.todo-input-group input {
-    flex: 1;
-    padding: 8px 12px;
-    border: 1px solid var(--border-metal);
-    border-right: none;
-    background-color: var(--panel-bg);
-    font-size: 0.85rem;
-}
-
-.todo-input-group .add-btn {
-    padding: 0 15px;
-    background-color: var(--eva-blue);
-    color: white;
-    border: 1px solid var(--eva-blue);
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.todo-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.todo-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border: 1px solid var(--border-metal);
-    background-color: var(--panel-bg);
-    font-size: 0.85rem;
-}
-
-.todo-item.done {
-    opacity: 0.5;
-    text-decoration: line-through;
-    background-color: var(--bg-main);
 }
 
 .status-marker {
