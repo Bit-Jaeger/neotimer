@@ -51,7 +51,8 @@ body {
 }
 
 .system-status {
-    color: #4cc9f0; /* Slight neon tech blue pop */
+    color: #4cc9f0;
+    background-color: var(--eva-blue);
 }
 
 .system-footer {
@@ -59,8 +60,8 @@ body {
     justify-content: space-between;
     padding: 6px 15px;
     font-size: 0.7rem;
-    color: var(--border-metal);
-    border-top: 1px solid var(--border-metal);
+    color: var(--text-dark);
+    border-top: 1px solid var(--text-dark);
     letter-spacing: 1px;
 }
 
@@ -81,8 +82,7 @@ body {
     padding: 5px;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    align-items: center;
     background-color: var(--panel-bg);
 }
 
@@ -100,7 +100,7 @@ body {
     color: var(--text-dark);
     letter-spacing: 4px;
     border: 2px;
-    border-color: var(--eva-blue-light)
+    border-color: var(--text-dark)
 }
 
 .status-marker {
