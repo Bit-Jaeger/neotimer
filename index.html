@@ -1,42 +1,62 @@
-<!DOCTYPE html> 
-<html lan="en"
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link id="styles" href="./assets/css/main.css">
-    <! Insert script later>
     <meta charset="UTF-8">
-    <title>neotimer</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NERV-Style Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-    <header>
-        <h1>/neotimer</h1>
-        <p>work in progress.... come back later</p>
-    </header>
 
-
-
-
-    <! filling in some space - will move to footer later>
-    <div class="container_socials">
-        <div class="discord">
-            <a href="">
-                <i class="fa-brands fa-discord"></i>
-                discord
-            </a>
-        </div>
-
-
-
-        <div class="github">
-            <a href="https://github.com/Bit-Jaeger">
-                <i class="fa-brands fa-github"></i>
-                github
-            </a>
-        </div>
+    <div class="interface-container">
         
+        <header class="system-header">
+            <div class="system-title">SYSTEM_MONITOR // CODE:01</div>
+            <div class="system-status">STATUS: ACTIVE</div>
+        </header>
 
+        <main class="dashboard-grid">
+            
+            <section class="timer-section">
+                <div class="panel-label">CHRONO_MODULE</div>
+                <div class="timer-display">
+                    00:00:00
+                </div>
+                <div class="sub-label">[ TIMER READY ]</div>
+            </section>
+
+            <aside class="todo-section">
+                <div class="panel-label">TASK_LOG</div>
+                
+                <div class="todo-input-group">
+                    <input type="text" placeholder="Add target objective..." disabled>
+                    <button class="add-btn" disabled>+</button>
+                </div>
+
+                <ul class="todo-list">
+                    <li class="todo-item done">
+                        <span class="status-marker">■</span>
+                        <span class="task-text">Synchronize interface parameters</span>
+                    </li>
+                    <li class="todo-item">
+                        <span class="status-marker">□</span>
+                        <span class="task-text">Initialize countdown event listener</span>
+                    </li>
+                    <li class="todo-item">
+                        <span class="status-marker">□</span>
+                        <span class="task-text">Calibrate UI structural layers</span>
+                    </li>
+                </ul>
+            </aside>
+
+        </main>
+
+        <footer class="system-footer">
+            <span>SYS_02_LXC_ENVIRONMENT</span>
+            <span>AETH_VER_1.0.4</span>
+        </footer>
+
+    </div>
 
 </body>
+</html>
