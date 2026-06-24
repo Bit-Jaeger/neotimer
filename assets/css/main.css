@@ -19,7 +19,6 @@ body {
     background-color: var(--bg-main);
     color: var(--text-dark);
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
