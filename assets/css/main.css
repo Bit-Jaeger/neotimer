@@ -13,6 +13,11 @@
     --text-dark: #2d353c;      
     --eva-blue: #2a6f97;       
     --eva-blue-light: #e1f1fd;  
+    --neon-turqoise: #00FFDE;
+    --neon-light-blue: #00CAFF;
+    --neon-blue: #0065F8;
+    --neon-darker-blue: #4300FF;
+    --neon-red: #FF0052;
 }
 
 body {
@@ -41,6 +46,7 @@ body {
     height: 90vh;
     display: flex;
     flex-direction: column;
+    align-self: center;
     border: 2px solid var(--border-metal);
     background-color: var(--panel-bg);
     position: relative;
