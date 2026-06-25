@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     gsap.to(".load-bar", { 
       x: -window.screen.width, 
       duration: 10, 
-      ease: "rough({ strength: 1, points: 20, template: none.out, taper: none, randomize: true, clamp: false })"
+      ease: "steps(12)"
     });
   
   });
