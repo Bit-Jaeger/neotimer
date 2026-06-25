@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // Run your test animation
     gsap.to(".load-bar", { 
       x: -window.screen.width, 
-      duration: 10, 
+      duration: 5, 
       ease: "steps(12)"
     });
   
