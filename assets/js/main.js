@@ -1,16 +1,12 @@
-// This waits until the browser has fully loaded the HTML and GSAP
 window.addEventListener("DOMContentLoaded", () => {
-  
     // Register your plugins
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-    let load_bar_tl = gsap.timeline();
-
-    load_bar_tl.to(".load-bar", 
-        {xPercent},
-        {
-        xPercent: 0, 
-        duration: 5, 
-        ease: "steps(12)"
-      });
-  });
+    gsap.to(".load-bar", {
+        duration: 5,
+        // Corrected string-based rough ease configuration
+        ease: "rough({ template: power1.out, strength: 1, points: 20, taper: none, randomize: true, clamp: false })",
+        // Animates the element 100% to the left of its own starting position
+        xPercent: -100 
+    }); // Fixed missing closing bracket and parenthesis
+});
