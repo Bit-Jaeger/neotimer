@@ -1,4 +1,7 @@
+import { gsap } from "gsap";
+
 window.addEventListener("DOMContentLoaded", () => {
+    
     // Register your plugins
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
