@@ -42,12 +42,12 @@ tl.to("interface-container", {opacity:1, delay:0.2})
 
 
 function interfaceFlicker(duration, startFreq){
-    let interface = document.getElementById("interface-container")
+    let interfaceEl = document.getElementById("interface-container")
 
-    interfaceTransparent(interface);
+    interfaceTransparent(interfaceEl);
 
 
-    interfaceNontransparent(interface);
+    interfaceNontransparent(interfaceEl);
     
 }
 
