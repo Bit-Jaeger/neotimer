@@ -38,6 +38,15 @@ body {
     overflow: hidden;
 }
 
+
+.boot-matrix-container{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    position:absolute;
+    background-color: var(--matrix-bg);
+}
+
 .load-bar {
     /* creating loading bar at full width */
     margin: 0%;
@@ -47,6 +56,7 @@ body {
     width: 100%;
     display: flex;
     position:absolute;
+    background-color: var(--matrix-darker-green);
     z-index: 99; /*move to front*/
 }
 
