@@ -13,11 +13,22 @@
     --text-dark: #2d353c;      
     --eva-blue: #2a6f97;       
     --eva-blue-light: #e1f1fd;  
+
+
+    
     --neon-turqoise: #00FFDE;
     --neon-light-blue: #00CAFF;
     --neon-blue: #0065F8;
     --neon-darker-blue: #4300FF;
     --neon-red: #FF0052;
+
+
+    --matrix-bg: #414767;
+    --matrix-light-bg: #6e7598;
+    --matrix-green: #a4f644;
+    --matrix-darker-green: #64d86b;
+    --matrix-darkest-green: #5ec986;
+
 }
 
 body {
@@ -47,6 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     align-self: center;
+    align-content: center;
     border: 2px solid var(--border-metal);
     background-color: var(--panel-bg);
     position: relative;
