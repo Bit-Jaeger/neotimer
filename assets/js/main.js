@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     gsap.to(".load-bar", {
         duration: 5,
         //important to have this in one line -> so it stays a string. That was the bug
-        ease: "rough({ template: power1.out, strength: 1, points: 20, taper: none, randomize: true, clamp: false })",
+        ease: "elastic.out(1,0.3)",
         x: -window_width 
     });
 
